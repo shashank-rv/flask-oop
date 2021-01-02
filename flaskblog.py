@@ -11,6 +11,9 @@ def hello():
     return render_template('home.html')
 
 
+    
+
+
 
 def var_name_return(var_name):
     name_list = ["self."+ i +" " +  "=" + " " + i for i in var_name]
