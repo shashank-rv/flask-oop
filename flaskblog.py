@@ -8,7 +8,7 @@ app = Flask(__name__)
 @app.route("/")
 @app.route("/home")
 def hello():
-    return render_template('/index.html')
+    return render_template('index.html')
 
 
 
@@ -30,7 +30,7 @@ def constructor():
     parsed_list = var_name_return(parsed_text)
     list2 = ["class",class_name,"():","def __init__","(self,","):"]
     total_list  = list2+parsed_list
-    return render_template('/index.html', var1 = total_list,var2 = parsed_text,var3 = class_name)
+    return render_template('index.html', var1 = total_list,var2 = parsed_text,var3 = class_name)
 
 
 
